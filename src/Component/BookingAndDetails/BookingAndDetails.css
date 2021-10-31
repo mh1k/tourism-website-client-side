@@ -1,0 +1,16 @@
+.details-title{
+    background-color: #976cd3;
+    color: white;
+}
+
+.details{
+    border: 1px solid gray;
+}
+
+.text-align{
+    text-align: justify;
+}
+.details-img{
+    width: 80%;
+    height: 100%;
+}

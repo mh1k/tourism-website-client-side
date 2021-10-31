@@ -1,0 +1,18 @@
+.booking-btn{
+    background-color: #976cd3;
+    color: white;
+    border: 1px solid #976cd3;
+}
+.booking-btn :hover{
+    background-color: white !important;
+    color: #976cd3 !important;
+    border: 1px solid #976cd3 !important;
+}
+
+.avialble-icon{
+    color: #976cd3 ;
+    border: 1px solid gray;
+    width: 42px;
+    border-radius: 50%;
+
+}

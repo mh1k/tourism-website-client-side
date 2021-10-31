@@ -1,0 +1,25 @@
+.place-img{
+    width: 272px;
+    height: 272px;
+    object-fit: cover;
+}
+
+.img-container {
+    position: relative;
+    /* text-align: center; */
+    color: white;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+  @media screen and (max-width: 668px) {
+    .place-img{
+        width: 100%;;
+        object-fit: cover;
+        
+    }
+  }

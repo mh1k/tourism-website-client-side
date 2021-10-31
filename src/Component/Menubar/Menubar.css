@@ -1,0 +1,79 @@
+.nav-link{
+    /* text-decoration: underline !important; */
+    border-bottom: 2px solid rgba(255, 254, 254, 0);
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+
+}
+.user-name{
+    font-size: 15px !important;
+    font-weight: bold;
+}
+.menubar-img{
+    width: 239px;
+    height: 35px;
+}
+.view-btn{
+    background-color: white !important;
+
+}
+.company-logo{
+    color: #976cd3;
+}
+.company-logo:hover{
+    color: #976cd3;
+}
+
+.nav-link:hover{
+    /* text-decoration: underline !important; */
+    border-bottom: 2px solid #976cd3;
+    color: #976cd3 !important;
+
+}
+
+.navabar-items{
+    margin-left: 20px !important;
+    margin-right: 10px !important;
+}
+.login-btn{
+    width: 81px;
+    border: 2px solid #976cd3 !important;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: #976cd3;
+    padding: 8px 20px !important;
+    border-radius: 25px;
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
+    
+    cursor: pointer;
+    outline: none;
+    }
+    .login-btn:hover {
+        background-color: white;
+        border: 2px solid #976cd3;
+        
+        color: rgb(0, 0, 0) !important;
+       
+      }
+
+.logout-btn{
+    width: 81px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: #976cd3;
+    border: 2px solid #976cd3 !important;
+    padding: 8px 14px !important;
+    border-radius: 25px;
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
+    
+    cursor: pointer;
+    outline: none;
+    }
+.logout-btn:hover {
+    background-color: white;
+        border: 2px solid #976cd3;
+        
+        color: rgb(0, 0, 0) !important;
+    
+    }
