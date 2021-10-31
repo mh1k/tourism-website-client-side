@@ -22,15 +22,15 @@ const About = () => {
                 </div>
 
                 <Row>
-                    <Col className="col-md-4">
+                    <Col className="col-12 col-md-4">
                         <h4>VISITOR EXPERIENCE</h4>
                         <p>Michael Paul has a real understanding, as do the property owners who list with him, that all holiday guests want to have a "good experience", whatever that specifically means to them.</p>
                     </Col>
-                    <Col className="col-md-4">
+                    <Col className="col-12 col-md-4">
                         <h4>COULD IT BE EASIER?</h4>
                         <p>The guest wants security of booking, certainty of information and a travel agent in the middle who understands the guest's needs, while the resort owner wants to be delivered guests who are well informed and know they have come to the right place when they drive through the gate, making Michael Paul Holidays' approach to booking is absolutely ideal for all parties.</p>
                     </Col>
-                    <Col className="col-md-4">
+                    <Col className="col-12 col-md-4">
                         <h4>WHERE TO FROM HERE?</h4>
                         <p>It's Holiday Express plan to keep discovering special places in Britain and to keep seeking out resort operators in those areas who match the brand's promise to deliver exceptional customer service to the guest and create an unforgettable holiday experience.</p>
                     </Col>

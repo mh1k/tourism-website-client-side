@@ -146,8 +146,8 @@ const ManageAllBooking = () => {
 
                                                         </Col>
                                                         <Col className="col-12 col-md-6 text-center align-self-end">
-                                                            <button className="btn btn-primary w-25 me-4 " onClick={() => handleApprovedBooking(booking._id)}>Approve</button>
-                                                            <button className="btn btn-primary w-50 " onClick={() => handleDeleteProduct(booking._id)}>Cancel Booking</button>
+                                                            <button className="btn btn-success w-25 me-4 " onClick={() => handleApprovedBooking(booking._id)}>Approve</button>
+                                                            <button className="btn btn-danger w-50 " onClick={() => handleDeleteProduct(booking._id)}>Cancel Booking</button>
                                                         </Col>
                                                     </Row>
 

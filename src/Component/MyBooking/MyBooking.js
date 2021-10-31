@@ -1,6 +1,5 @@
 import { faBed, faCamera, faPassport, faPlaneDeparture, faUtensils } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Button from '@restart/ui/esm/Button';
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row, Spinner } from 'react-bootstrap';
 import useAuth from '../../Hooks/useAuth';
@@ -125,7 +124,7 @@ const MyBooking = () => {
                                                    
                                                </Col>
                                                <Col className="col-12 col-md-6 text-center align-self-end">
-                                                   <button className="btn btn-primary w-75 " onClick={() => handleDeleteProduct(booking._id)}>Cancel Booking</button>
+                                                   <button className="btn btn-danger w-75 " onClick={() => handleDeleteProduct(booking._id)}>Cancel Booking</button>
                                                </Col>
                                            </Row>
 
