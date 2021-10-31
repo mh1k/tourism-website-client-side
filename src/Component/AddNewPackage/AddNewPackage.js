@@ -20,7 +20,7 @@ const AddNewPackage = () => {
         const package_gateway = packagegatewayRef.current.value;
         const package_summary = packagesummaryRef.current.value;
         const newPackage = { package_name, img, package_duration, package_price, package_gateway, package_summary }
-        console.log(newPackage);
+        // console.log(newPackage);
         fetch('https://frightening-village-49755.herokuapp.com/packages', {
             method: 'POST',
             headers: {
@@ -32,7 +32,7 @@ const AddNewPackage = () => {
             .then(data => {
                 if (data.insertedId) {
                     alert("Succssfully Added This Package")
-                    // e.target.reset();
+                    e.target.reset();
                     // console.log(data);
                 }
             })

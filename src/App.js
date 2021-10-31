@@ -1,5 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
+import About from './Component/About/About';
 import AddNewPackage from './Component/AddNewPackage/AddNewPackage';
 import BookingAndDetails from './Component/BookingAndDetails/BookingAndDetails';
 import Contact from './Component/Contact/Contact';
@@ -10,6 +11,7 @@ import Login from './Component/Login/Login';
 import ManageAllBooking from './Component/ManageAllBooking/ManageAllBooking';
 import Menubar from './Component/Menubar/Menubar';
 import MyBooking from './Component/MyBooking/MyBooking';
+import NotFound from './Component/NotFound/NotFound';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import AuthProvider from './Context/Context';
 
@@ -32,6 +34,9 @@ function App() {
             <Route path="/contact">
               <Contact></Contact>
             </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
             <PrivateRoute path="/my_booking">
               <MyBooking></MyBooking>
             </PrivateRoute>
@@ -44,6 +49,9 @@ function App() {
             <PrivateRoute path="/add_package">
               <AddNewPackage></AddNewPackage>
             </PrivateRoute>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>

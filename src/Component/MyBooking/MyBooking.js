@@ -10,7 +10,7 @@ const MyBooking = () => {
 
     const [mybookings, setPackages] = useState([]);
     const { user } = useAuth();
-    console.log(user);
+    // console.log(user);
 
     const planeIcon = <FontAwesomeIcon icon={faPlaneDeparture} />
     const bedIcon = <FontAwesomeIcon icon={faBed} />
@@ -25,7 +25,7 @@ const MyBooking = () => {
             .then(data => setPackages(data))
     }, [user]);
 
-    console.log(mybookings);
+    // console.log(mybookings);
 
     const handleDeleteProduct = id => {
 
@@ -37,7 +37,7 @@ const MyBooking = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
+                    // console.log(data);
                     if (data.deletedCount > 0) {
                         alert("booking cancel Successfully")
                         const remainingProducts = mybookings.filter(product => product._id !== id);

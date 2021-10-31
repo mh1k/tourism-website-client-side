@@ -10,7 +10,7 @@ import './BookingAndDetails.css'
 const BookingAndDetails = () => {
     const [packag, setPackage] = useState({});
     const { package_id } = useParams();
-    console.log(packag);
+    // console.log(packag);
 
     const { user } = useAuth();
 
@@ -56,7 +56,7 @@ const BookingAndDetails = () => {
             person: packageperson,
             bookingPackage: packag
         }
-        console.log(newBooking);
+        // console.log(newBooking);
 
         fetch('https://frightening-village-49755.herokuapp.com/orders', {
             method: 'POST',

@@ -19,7 +19,7 @@ const ManageAllBooking = () => {
             .then(data => setManageBooking(data))
     }, []);
 
-    console.log(manageBooking);
+    // console.log(manageBooking);
 
     const handleDeleteProduct = id => {
 
@@ -31,7 +31,7 @@ const ManageAllBooking = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
+                    // console.log(data);
                     if (data.deletedCount > 0) {
                         alert("booking cancel Successfully")
                         const remainingProducts = manageBooking.filter(product => product._id !== id);
@@ -57,7 +57,7 @@ const ManageAllBooking = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 if (data.modifiedCount > 0) {
                     alert("Approved Succesfully")
 

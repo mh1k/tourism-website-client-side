@@ -21,7 +21,7 @@ const Packages = () => {
             .then(data => setPackages(data))
     }, []);
 
-    console.log(packages);
+    // console.log(packages);
     return (
         <div className="mb-5">
             <h2 className="text-center mt-5 company-logo mb-4">International Holiday Tour Package</h2>
