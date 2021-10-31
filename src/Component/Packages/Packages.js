@@ -39,7 +39,7 @@ const Packages = () => {
                                                 <Card.Title className="pakage-title ">{packag.package_name}</Card.Title>
                                             </Col>
                                             <Col className="col-6">
-                                            <h5 className="text-end">{packag.package_price} $</h5>
+                                                <h5 className="text-end">{packag.package_price} $</h5>
                                             </Col>
                                         </Row>
                                         <div className="feature-icon mt-2 d-flex justify-content-between">
@@ -64,9 +64,8 @@ const Packages = () => {
                                                 <p>Meals</p>
                                             </div>
 
-
                                         </div>
-                                        {/* <p className="text-bold">package Price : {packag.price} BDT</p> */}
+
                                         <Card.Text>
                                             {packag.package_summary.slice(0, 120)}...
                                         </Card.Text>

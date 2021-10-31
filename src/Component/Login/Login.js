@@ -8,9 +8,10 @@ import './Login.css'
 
 const Login = () => {
 
-    const googleIcon = <FontAwesomeIcon icon={faGoogle} />
+    const googleIcon = <FontAwesomeIcon icon={faGoogle} /> // google icon
 
     const { signInUsingGoogle } = useAuth();
+
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';

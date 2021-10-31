@@ -17,12 +17,10 @@ const Menubar = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
+
                             <Link className="text-decoration-none  ms-2 nav-link" to="/home">Home</Link>
                             <Link className="text-decoration-none  ms-2 nav-link" to="/about">About</Link>
                             <Link className="text-decoration-none  ms-2 nav-link" to="/contact">Contact</Link>
-                            
-
-
 
                         </Nav>
                         <Nav>

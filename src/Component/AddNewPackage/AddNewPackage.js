@@ -12,15 +12,20 @@ const AddNewPackage = () => {
     const packagesummaryRef = useRef();
 
     const handleAddPackage = e => {
+
         e.preventDefault();
+
         const package_name = packagenameRef.current.value;
         const img = packageimgRef.current.value;
         const package_duration = packagedurationRef.current.value;
         const package_price = packagepriceRef.current.value;
         const package_gateway = packagegatewayRef.current.value;
         const package_summary = packagesummaryRef.current.value;
+
         const newPackage = { package_name, img, package_duration, package_price, package_gateway, package_summary }
+
         // console.log(newPackage);
+
         fetch('https://frightening-village-49755.herokuapp.com/packages', {
             method: 'POST',
             headers: {
@@ -36,11 +41,12 @@ const AddNewPackage = () => {
                     // console.log(data);
                 }
             })
+
     }
     return (
         <div>
             <Container className="mt-5">
-            <h2 className="details-title py-1 mt-5 px-3 mb-5" >Add New Package</h2>
+                <h2 className="details-title py-1 mt-5 px-3 mb-5" >Add New Package</h2>
                 <Form onSubmit={handleAddPackage}>
 
                     <Form.Control size="lg" ref={packagenameRef} className="mb-3" required type="text" placeholder="Package name" />
@@ -49,10 +55,11 @@ const AddNewPackage = () => {
                     <Form.Control size="lg" ref={packagepriceRef} className="mb-3" required type="number" placeholder="Package price" />
                     <Form.Control size="lg" ref={packagegatewayRef} className="mb-3" required type="text" placeholder="Gateway - Example - Dhaka to Uk" />
                     <Form.Control size="lg" ref={packagesummaryRef} className="mb-3" required as="textarea" placeholder="Package summary" />
-                    
+
                     <Button variant="primary" className="booking-btn btn w-100" type="submit">
                         Add Package
                     </Button>
+
                 </Form>
             </Container>
 

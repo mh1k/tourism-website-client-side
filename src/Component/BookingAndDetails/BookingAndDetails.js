@@ -86,10 +86,10 @@ const BookingAndDetails = () => {
                         </div>
                         <Row className="fw-bold">
                             <Col>
-                            <p>Package Price : {packag.package_price} $ (per person)</p>
+                                <p>Package Price : {packag.package_price} $ (per person)</p>
                             </Col>
                             <Col>
-                            <p className="text-end">Tour Time : {packag.package_duration} Days</p>
+                                <p className="text-end">Tour Time : {packag.package_duration} Days</p>
                             </Col>
                         </Row>
                         <h4 className="mb-3">Our Facility Management</h4>
@@ -121,6 +121,7 @@ const BookingAndDetails = () => {
                         </div>
                     </Col>
                     <Col className="p-3 col-md-5">
+
                         <h2 className="mb-4 details-title py-1 px-2">Booking Information</h2>
                         <Form onSubmit={handleBooking}>
 
@@ -135,7 +136,9 @@ const BookingAndDetails = () => {
                             <Button variant="primary" className="booking-btn btn w-100" type="submit">
                                 Submit
                             </Button>
+
                         </Form>
+
                     </Col>
 
                 </Row>

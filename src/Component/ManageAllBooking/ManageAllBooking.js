@@ -44,7 +44,6 @@ const ManageAllBooking = () => {
 
     const approved = { status: "Approved" }
 
-
     const handleApprovedBooking = id => {
         const url = `https://frightening-village-49755.herokuapp.com/orders/${id}`
         fetch(url, {
@@ -159,10 +158,6 @@ const ManageAllBooking = () => {
                             }
                         </Row>
                 }
-
-
-
-
             </Container>}
 
         </div>

@@ -18,7 +18,7 @@ const BangladeshPlace = () => {
                 <h2 className="text-center mb-5 company-logo">Sightseeing in Bangladesh</h2>
                 <Row xs={1} md={4} className="g-4">
                     {
-                        banglaplace.map(place => <Col >
+                        banglaplace.map(place => <Col key={place._id}>
                             <Card className="img-container">
                                 <img className="place-img img-fluid" src={place.img} alt="" />
                                 <h2 className="bottom-left">{place.place_Name}</h2>
@@ -26,6 +26,7 @@ const BangladeshPlace = () => {
                         </Col>)
                     }
                 </Row>
+
             </Container>
         </div>
     );

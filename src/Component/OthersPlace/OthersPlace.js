@@ -18,11 +18,11 @@ const OthersPlace = () => {
                 <h2 className="text-center mb-5 company-logo">Weekend getaways from Dhaka City To India</h2>
                 <Row xs={1} md={4} className="g-4">
                     {
-                        othersplace.map(place => <Col >
-                        <Card className="img-container">
-                        <img className="place-img img-fluid" src={place.img} alt="" />
-                        <h2 className="bottom-left">{place.place_Name}</h2>
-                        </Card>
+                        othersplace.map(place => <Col key={place._id} >
+                            <Card className="img-container">
+                                <img className="place-img img-fluid" src={place.img} alt="" />
+                                <h2 className="bottom-left">{place.place_Name}</h2>
+                            </Card>
                         </Col>)
                     }
                 </Row>

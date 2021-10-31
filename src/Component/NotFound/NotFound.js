@@ -13,8 +13,6 @@ const NotFound = () => {
                 <Link className="homeBtn" to='/home'>Go Home</Link>
             </div>
 
-
-
         </div>
     );
 };
